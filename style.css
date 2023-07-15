@@ -1,0 +1,1317 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   
+  
+}
+body{
+    overflow-x: hidden;
+}
+.navigation-bar{
+    background: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+   position: relative;
+    padding: 12px;
+    justify-content: center;
+    gap: 30px;
+}
+.navigation-bar .logo-div{
+    
+    padding: 5px 17px;
+
+}
+.logo-div img{
+   width: 100px
+}
+.navigation-bar .search-bar-dvi{
+    border: 2px solid whitesmoke;
+    width: 569px;
+    max-width: 680px;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.location-div{
+    border: 3px solid whitesmoke;
+    display: flex;
+    padding: 6px 39px;
+    gap: 12px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+}
+.location-div span{
+    font-size: 14px;
+    opacity: 0.7;
+}
+.location-div i{
+   position: absolute;
+   right: 3px;
+   opacity: 0.6;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchBox{
+    width: 100%;
+    padding: 9px 16px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+#searchicon{
+    padding: 3px;
+    font-size: 19px;
+}
+.delivery-night-dinning-info{
+    width: 100%;
+    border: 2px solid whitesmoke;
+    padding: 14px;
+    display: flex;
+    border-top: none;
+    gap: 40px;
+    margin-top: 16px;
+}
+.delivery-logo{
+  
+    display: flex;
+    width: 150px;
+   
+    color: rgb(105, 105, 105);
+
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-left: 15px;
+
+}
+
+.delivery-logo .image-div{
+    border: 1px solid black;
+    width: 80px;
+    height: 63px;
+    border-radius: 50%;
+    padding: 7px;
+    background: rgb(238, 235, 235);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-div img{
+    width: 86%;
+    height: 100%;
+    object-fit: contain;
+    background-size: contain;
+    background-position: center;
+}
+.delivery-logo span{
+    font-size: 19px;
+}
+#diningout ,#nightout{
+    width: 200px;
+}
+.filters-div{
+    display: flex;
+    flex-direction: row;
+    padding: 16px 16px;
+    margin-top: 9px;
+   position: sticky;
+   top: 0px;
+   background: white;
+   z-index: 3;
+   align-items: center;
+   
+    
+}
+.filter-section{
+    margin-left: 2.6rem;
+    display:flex;
+    gap: 20px;
+    position: sticky;
+    
+}
+.filter-section li{
+    background: whitesmoke;
+    box-shadow: rgba(54, 54, 54, 0.06) 0px 1px 2px;;
+    padding: 6px;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    border: 2px solid whitesmoke;
+    border-radius: 6px;
+}
+.filter-section li i{
+    opacity: 0.4;
+}
+
+.dishes-div{
+   
+    display: grid;
+    background: whitesmoke;
+    padding: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    grid-template-columns: repeat(12,1fr);
+    gap: 2px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+   
+}
+.dishes-div::-webkit-scrollbar{
+    display: none;
+}
+.first-icon{
+    width: 186px;
+   cursor: pointer;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    scroll-snap-align: center;
+   
+   
+}
+.image-pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: multiply;
+    filter: contrast(1);
+    overflow: hidden;
+   
+}
+.image-pic img{
+    width: 97%;
+    height: 90%;
+    object-fit: contain;
+    
+    aspect-ratio: 4 / 4;
+    
+    
+   
+}
+.first-icon span{
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+.pizza{
+   mix-blend-mode:multiply;
+   background-color: transparent;
+   border-radius: 50%;
+   filter: contrast(1);
+   overflow: hidden;
+}
+
+.brands-div{
+    
+    padding: 12px;
+    display: block;
+   
+}
+.brands-div h2{
+    margin-left: 2rem;
+    
+    width: 100%;
+}
+.brands-logo-section{
+    display: grid;
+    padding: 18px;
+    margin-top: 13px;
+    
+    grid-template-columns: repeat(8,1fr);
+}
+.logos-div{
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+   
+}
+#Empire{
+    font-size: 15px;
+}
+.my-logo-div{
+    border: 0.5px solid rgb(232, 232, 232);
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 12px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.logos-div img{
+    width: 100px;
+    height: 90px;
+    aspect-ratio: 4 / 4;
+    object-fit: cover;
+   }
+   #empire{
+   width: 100px;
+   object-fit: scale-down;
+   }
+
+
+
+/*food List Code starts From Here */
+
+.food-items-list-div-homepage{
+    display: flex;
+    
+    padding: 30px;
+    width: 100%;
+    flex-direction: column;
+}
+.food-items-list-div-homepage h2{
+    margin-left: 4rem;
+    opacity: 0.7;
+}
+.items-div-food{
+   
+    margin-top: 9px;
+    padding: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    
+}
+.food-tem1{
+    margin-left: 6rem;
+   padding: 7px;
+    border: 0.5px solid rgb(232, 232, 232);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.front-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.front-page img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    aspect-ratio: 4 / 3;
+}
+.Restaurant-name-div{
+    margin-top: 3px;
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+.rating {
+    display: flex;
+    gap: 3px;
+    font-size: 13px;
+    margin-right: 10px;
+    align-items: center;
+    background-color: rgb(36, 150, 63);
+    padding: 2px;
+    color: white;
+    border-radius: 5px;
+}
+.rating i{
+    font-size: 9px;
+}
+.dishes-show{
+    display: flex;
+    padding: 4px;
+    font-size: 13px;
+    color: rgb(95, 94, 94);
+    justify-content: space-between;
+}
+#delivery{
+    margin-right: 12px;
+    color: black;
+}
+
+.selected{
+   
+    color: rgb(239, 79, 95);
+}
+
+.Food-display{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    border: 1px solid rgb(239, 79, 95);;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+   
+    
+}
+.time{
+    color: rgb(126, 123, 123);
+}
+.many-images-div{
+   
+    background: white;
+    display: flex;
+   width: 100%;
+   height: 300px;
+  
+   
+}
+
+.display1{
+   
+    width: 60%;
+}
+.display1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.display2{
+ 
+    width: 15%;
+}
+.display2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+.display3{
+   
+    width: 15%;
+}
+
+.display3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.display4{
+  
+    width: 15%;
+}
+.display4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.display1:hover{
+    transform: scale(1.1);
+    transition: .3s smooth ease-in-out;
+}
+.display3:hover{
+    transform: scale(1.1);
+    transition: .3s smooth ease-in-out;
+}
+.display2:hover{
+    transform: scale(1.1);
+    transition: .3s smooth ease-in-out;
+}
+.display4:hover{
+    transform: scale(1.1);
+    transition: .3s smooth ease-in-out;
+}
+.display5:hover{
+    transform: scale(1.1);
+    transition: .3s smooth ease-in-out;
+}
+
+.Restaurantname-display{
+    border: 1px solid white;
+    margin-top: 2rem;
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rating-section{
+    font-size: 15px;
+    margin-right: 10px;
+    align-items: center;
+    background-color: rgb(36, 150, 63);
+    padding: 4px;
+    display: flex;
+    color: white;
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+    gap: 3px;
+    align-items: center;
+}
+.rest-info{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 8px;
+    font-size: 16px;
+    opacity: 1;
+    color: #9DB2BF;
+   
+}
+.open{
+    font-size: 11px;
+    margin-top: 4px;
+    color: rgb(244, 162, 102);
+}
+
+
+
+
+    
+
+
+
+body{
+    position: relative;
+}
+
+.added-filters{
+    display: flex;
+    margin-left: 2rem;
+    border: 1px solid black;
+    padding: 3px;
+    font-size: 14px;
+    gap: 15px;
+    flex-direction: row;
+    display: none;
+    
+}
+.added-filters ul{
+    text-decoration: none;
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    gap: 19px;
+    
+}
+.added-filters ul li{
+    color: rgb(239, 79, 95);
+    padding: 6px 16px;
+    border-radius: 6px;
+    gap: 4px;
+}
+.added-filters ul li i{
+    color: white;
+}
+
+.checked{
+    color: rgb(239, 79, 95);
+}
+
+.main-page-display{
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+   
+    flex-direction: column;
+    padding: 30px;
+   
+    }
+.imag-div-display{
+    
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+.grid1{
+   
+    width: 50%;
+    padding: 10px;
+    border-radius: 6px;
+   
+}
+.grid2{
+   
+    width: 20%;
+    padding: 10px;
+}
+
+.grid1 img{
+    width: 100%;
+    object-fit: contain;
+    background-position: center;
+    border-radius: 6px;
+}
+.grid2 img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+   
+}
+.grid3{
+    width: 30%;
+    
+}
+
+.grid3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.imag-div-display img:hover{
+    transform: scale(1.1);
+    transition: transform 3ms ease-in-out;
+}
+
+.Restaurant-information-section{
+    margin-top: 1rem;
+   
+    padding: 4px;
+}
+.names-section{
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+.names-section h2{
+    font-size: 22px;
+}
+
+.names-section span{
+    background: green;
+    color: white;
+    padding: 5px;
+    gap: 3px;
+    border-radius: 6px;
+  
+}
+.subsection-display{
+    display: flex;
+   
+    box-sizing: inherit;
+    padding: 3px;
+    opacity: 0.6;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.location{
+    display: flex;
+    padding: 3px;
+    margin-top: 4px;
+    opacity: 0.6;
+   
+}
+.location span{
+    display: flex;
+    margin-left: 16px;
+    font-size: 13px;
+    color: #97999b;
+}
+.direction_bookmark_div{
+    margin-top: 12px;
+    display: flex;
+    gap: 15px;
+}
+.direction ,.bookmark{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
+    border-radius: 7px;
+    border: none;
+    border-color: 1px solid whitesmoke;
+}
+.direction svg{
+    font-size: 19px;
+}
+
+.menu-div-food-items{
+    display: flex;
+    border: 1px solid rgb(239, 79, 95);;
+    border-right: none;
+    padding: 13px;
+    flex-direction: column;
+    position: relative;
+}
+.section-dis{
+    font-size: 20px;
+    margin-left: 12px;
+}
+.items-food{
+    display: flex;
+    padding: 12px;
+    margin-top: 9px;
+    flex-direction: row;
+   
+}
+.food-image-display{
+    border: 1px solid rgb(224, 221, 221);
+    width: 150px;
+    height: 130px;
+    display: flex;;
+    flex-direction: row;
+    margin-top: 5px;
+    
+}
+.food-image-display img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+}
+.foodname{
+    display: flex;
+    margin-left: 1rem;
+   position: relative;
+   
+    width: 100%;
+    max-width: 1200px;
+    min-width: 100px;
+    flex-direction: column;
+    border-bottom: 2px solid rgb(230, 225, 225);
+   
+}
+.foodname span{
+    font-size: 19px;
+}
+.price-amount{
+    color: #403e3e;
+}
+.item-desc{
+    color: #595757;
+}
+
+.addcart{
+    width: 10%;
+    border-radius: 7px;
+    border: none;
+    border: 1px solid whitesmoke;
+    margin-top: 15px;
+    background: rgb(239, 79, 95);;
+    color: white;
+    padding: 6px;
+    margin-bottom: 6px;
+}
+.addcart:hover{
+    background:rgb(249, 168, 176);
+}
+.food-containner{
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.pop-up-div{
+    background: white;
+    width: 24%;
+    border: 2px solid whitesmoke;
+    padding: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+   
+    bottom: 1%;
+   left: 80%;
+   display: none;
+   height: 40px;
+    transform:  translate(-50%);
+   
+    
+}
+.pop-up-div i{
+    color: rgb(70, 173, 70);
+}
+.food-{
+    display: flex;
+}
+#cart-page{
+    border: 2px solid whitesmoke;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.two-section{
+    display: flex;
+   
+    padding: 16px;
+    justify-content: center;
+    margin-top: 15px;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 6rem;
+    align-items: center;
+}
+
+.Main{
+    border: 2px solid whitesmoke;
+    padding: 25px;
+    width: 790px;
+    margin-bottom: 14px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.food11{
+    display: flex;
+    position: relative;
+   
+}
+.Food-Image img{
+    width: 150px;
+}
+.Food-Name{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+.Fname{
+    padding: 5px;
+    font-size: 22px;
+}
+.fprice{
+    padding: 5px;
+    font-size: 20px;
+}
+.button-div-section{
+    flex-direction: row;
+  
+    margin-left: 9rem;
+    position: absolute;
+    display: flex;
+   gap: 12px;
+    right: 4px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.add-item ,.minus-item{
+    height: 20%;
+    width: 50px;
+    color: white;
+    background: rgb(239, 79, 95);;
+    border: none;
+    border: 1px solid whitesmoke;
+    font-size: 18px;
+    border-radius: 7px;
+   
+}
+
+.amount-section-div{
+ 
+    padding: 20px;
+}
+.amount{
+   
+    padding: 17px;
+    margin-left: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.informationofamount{
+   
+    width: 490px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.frst-div-section{
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+}
+.frst-div-section span{
+    margin-bottom: 5px;
+}
+.second-section-div{
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+}
+.second-section-div{
+    margin-bottom: 5px;
+}
+.totalamount{
+    border-top: 2px solid #ccc;
+    width: 400px;
+}
+.totalamount{
+    border-top: 2px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    width: 490px;
+}
+
+.placeorder{
+    width: 30%;
+    margin-top: 15px;
+    border: none;
+    background:  rgb(239, 79, 95);;
+    border-radius: 6px;
+    color: white;
+    padding: 7px;
+
+}
+.placeorder:hover{
+    background:  rgb(243, 162, 170);;
+}
+
+.profile-pic{
+    background: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 13px;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.Banner{
+   
+    padding: 70px;
+    background: rgb(97, 196, 97);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.Banner h3{
+    color: white;
+    align-items: center;
+    font-size: 29px;
+    justify-content: center;
+}
+.ontime-div{
+    border: 1px solid white;
+    margin-top: 28px;
+   display: flex;
+   gap: 7px;
+   background: rgb(255, 255, 255);
+   flex-direction: row;
+   
+}
+.onTimeD{
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    display: flex;
+    flex-direction: row;
+}
+.onTimeD i{
+    margin-left: 3px;
+    color: rgb(212, 212, 9);
+}
+.arriving{
+    padding: 6px;
+    display: flex;
+    
+}
+
+.map-hardcoded{
+    position: relative;
+   width: 100%;
+  height: 400px;
+   overflow: hidden;
+  
+   display: flex;
+}
+.map-hardcoded img {
+    width: 100%;
+    height: 100%;
+   object-fit: contain;
+   
+ }
+
+.order-section-delivery-display{
+    border: 1px solid #ccc;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 8px;
+    ;
+}
+
+.ietm{
+    display: flex;
+    border: 1px solid rgb(137, 134, 134);
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+.ietm span{
+    font-size: 18px;
+    gap: 5px;
+    margin-left: 5px;
+}
+
+.ietm img{
+    width: 50px;
+    aspect-ratio: 4/4;
+    height: 50px;
+    margin-left: 12px;
+    border-radius: 50%;
+}
+ .ietm .items-q{
+    font-size: 12px;
+    opacity: 0.6;
+    margin-left: 7px;
+}
+
+
+
+@media (max-width : 820px){
+    .navigation-bar .search-bar-dvi{
+        display: none;
+    }
+    .location-div{
+        display: none;
+    }
+    #searchicon{
+        display: none;
+    }
+    #searchBox{
+        display: none;
+    }
+    .navigation-bar .logo-div{
+        position: absolute;
+        left: 5px;
+        top: 2px;
+        z-index: 2;
+    }
+    .delivery-night-dinning-info{
+        display: flex;
+        font-size: 1rem;
+    }
+    .profile-pic{
+        display: flex;
+    }
+    .delivery-logo span{
+        font-size: 1rem;
+    }
+    .brands-logo-section{
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+    .brands-logo-section::-webkit-scrollbar{
+        display: none;
+    }
+    .food-items-list-div-homepage{
+        padding: 20px;
+    }
+    .items-div-food{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 8px;
+    }
+    .food-tem1{
+        margin-left: 2rem;
+    }
+    .rating{
+        padding: 2px;
+        font-size: 0.7rem;
+    }
+    .pop-up-div{
+        width: 350px;
+    }
+    .addcart{
+        width: 25%;
+    }
+    .navigation-bar{
+        width: 100%;
+        height: 70px;
+    }
+    .two-section{
+        display: flex;
+        margin-left: 1rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 570px){
+    .delivery-night-dinning-info{
+        display: flex;
+        width: 100%;
+        gap: 1px;
+        padding: 5px;
+       
+        
+    }
+    .delivery-logo{
+        margin-left: 3px;
+    }
+    .delivery-logo .image-div{
+        width: 40px;
+        height: 40px;
+       
+        
+    }
+    .delivery-logo span{
+        font-size: 0.9rem;
+    }
+    .profile-pic{
+        top: 3px;
+        z-index: 2;
+    }
+    .filters-div{
+        display: flex;
+        width: 100%;
+       
+    }
+    .filter-section{
+        margin-left: 2px;
+        
+    }
+    .brands-logo-section{
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+    .brands-logo-section::-webkit-scrollbar{
+        display: none;
+    }
+    .food-tem1{
+        margin-left: 2rem;
+    }
+    .rating{
+       padding: 2px;
+       margin-right: 6px;
+        font-size: 0.6rem;
+        height: 14px;
+    }
+    .Restaurant-name-div {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width : 500px){
+    .filters-div{
+        display: flex;
+        width: 100%;
+       
+    }
+    .filter-section{
+        margin-left: 0.2rem;
+       
+        
+    }
+    .filter-section li{
+        font-size: 0.72rem;
+        gap: 2px;
+        padding: 3px;
+    }
+    .brands-logo-section{
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+    .brands-logo-section::-webkit-scrollbar{
+        display: none;
+    }
+    .food-containner button{
+        width: 100px;
+    }
+    .imag-div-display{
+        width: 100%;
+        display: flex;
+        margin-left: 1rem;
+        justify-content: center;
+    }
+    .imag-div-display .grid1{
+        width: 100%;
+        padding: 0px;
+    }
+    .grid1 img{
+        width: 290px;
+    }
+    .imag-div-display .grid2{
+        display: none;
+    }
+    .imag-div-display .grid3{
+        display: none;
+    }
+
+
+    .names-section span{
+        font-size: 0.6rem;
+        height: 23px;
+       
+    }
+    .location{
+        font-size: 0.7rem;
+    }
+    .item-desc{
+        font-size: 0.8rem;
+    }
+    .two-section .Main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+      
+    }
+    .Main .food11{
+        margin-left: 3rem;
+       
+        width: 50%;
+        position: relative;
+    }
+    .button-div-section{
+        margin-right: 0.2rem;
+        position: absolute;
+        align-items: center;
+       
+        right: 35px;
+        top: 29px;
+    }
+    .button-div-section button{
+        margin-right: 1rem;
+        width: 29px;
+    }
+    .food11 .Food-Image img{
+        width: 40px;
+        margin-left: 3.5rem;
+        margin-top: 4px;
+    }
+    .Food-Name span{
+        font-size: 0.6rem;
+    }
+    .Banner h3{
+        width: 400px;
+        font-size: 1.5rem;
+        font-weight: bold;
+       
+    }
+    .totalamount{
+        display: flex;
+        justify-content: space-around;
+    }
+    .placeorder{
+        width: 45%;
+    }
+}
+
+
+
+
+@media (max-width : 760px){
+    .two-section .Main{
+        display: flex;
+       
+      
+    }
+    .Main .food11{
+        margin-left: 3rem;
+       
+        width: 70%;
+    }
+    .button-div-section{
+        margin-right: 4rem;
+    }
+    .food11 .Food-Image img{
+        width: 70px;
+    }
+    .Food-Name span{
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 700px){
+    .items-div-food{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+    }
+    .order-section-delivery-display{
+        display: grid;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .ietm{
+        font-size: 14px;
+        align-items: center;
+        margin-left: 2rem;
+        width: 190px;
+    }
+    .order-section-delivery-display::-webkit-scrollbar {
+        display: none;
+    }  
+    .ietm span{
+        font-size: 13px;
+    }
+    .ietm img{
+        width: 20px;
+        height: 20px;
+    }
+}

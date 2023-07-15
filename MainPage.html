@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="navigation-bar">
+    <div class="logo-div">
+        <img src="zomato.avif"/>
+    </div>
+    <div class="search-bar-dvi">
+        <div class="location-div">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#FF7E8B" width="20" height="20" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 iRDDBk"><title>location-fill</title><path d="M10.2 0.42c-4.5 0-8.2 3.7-8.2 8.3 0 6.2 7.5 11.3 7.8 11.6 0.2 0.1 0.3 0.1 0.4 0.1s0.3 0 0.4-0.1c0.3-0.2 7.8-5.3 7.8-11.6 0.1-4.6-3.6-8.3-8.2-8.3zM10.2 11.42c-1.7 0-3-1.3-3-3s1.3-3 3-3c1.7 0 3 1.3 3 3s-1.3 3-3 3z"></path></svg>
+            <span>Bengaluru</span>
+            <i class="bi bi-caret-down-fill"></i>
+        </div>
+        <i class="bi bi-search" id="searchicon"></i>
+        <input type="text" placeholder="Search for restaurant, cuisine or a dish" id="searchBox"/>
+        </div>
+        <a href="profile.html">
+        <div class="profile-pic">kl</div></a>
+    </div>
+    </div>
+    <div class="delivery-night-dinning-info">
+        <div class="delivery-logo">
+         <div class="image-div">
+          <img src="Delivery.avif" alt="">  
+         </div>  
+         <span class="selected">Delivery</span> 
+        </div>
+        <div class="delivery-logo" id="diningout">
+            <div class="image-div">
+             <img src="Dinning.avif" alt="">  
+            </div>  
+            <span>Dining Out</span> 
+           </div>
+
+           <div class="delivery-logo" id="nightout">
+            <div class="image-div">
+             <img src="Nightlife.webp" alt="">  
+            </div>  
+            <span>Night life</span> 
+           </div>
+
+    </div>
+
+    <div class="filters-div">
+      <ul class="filter-section">
+        <li id="filter"><svg xmlns="http://www.w3.org/2000/svg" fill="#9C9C9C" width="18" height="18" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 iwHbVQ"><title>filter</title><path d="M2.14 6.42h7.26c0.353 1.207 1.45 2.074 2.75 2.074s2.397-0.867 2.745-2.054l0.005-0.020h2.96c0.343-0.059 0.6-0.355 0.6-0.71s-0.258-0.651-0.596-0.709l-0.004-0.001h-2.94c-0.341-1.226-1.447-2.11-2.76-2.11s-2.419 0.885-2.755 2.090l-0.005 0.020h-7.26c-0.343 0.059-0.6 0.355-0.6 0.71s0.257 0.651 0.596 0.709l0.004 0.001zM12.16 4.28c0.776 0.011 1.4 0.643 1.4 1.42 0 0.784-0.636 1.42-1.42 1.42-0.777 0-1.409-0.624-1.42-1.399l-0-0.001c-0-0.006-0-0.013-0-0.020 0-0.784 0.636-1.42 1.42-1.42 0.007 0 0.014 0 0.021 0l-0.001-0zM17.86 13.58h-7.24c-0.328-1.245-1.443-2.148-2.77-2.148s-2.442 0.903-2.766 2.128l-0.004 0.020h-2.94c-0.036-0.006-0.077-0.010-0.12-0.010-0.398 0-0.72 0.322-0.72 0.72s0.322 0.72 0.72 0.72c0.042 0 0.084-0.004 0.124-0.011l-0.004 0.001h2.96c0.353 1.207 1.45 2.074 2.75 2.074s2.397-0.867 2.745-2.054l0.005-0.020h7.26c0.343-0.059 0.6-0.355 0.6-0.71s-0.258-0.651-0.596-0.709l-0.004-0.001zM7.84 15.72c-0.776-0.011-1.4-0.643-1.4-1.42 0-0.784 0.636-1.42 1.42-1.42 0.777 0 1.409 0.624 1.42 1.399l0 0.001c0 0.006 0 0.013 0 0.020 0 0.784-0.636 1.42-1.42 1.42-0.007 0-0.014-0-0.021-0l0.001 0z"></path></svg>
+            Filter
+           
+        </li>
+       
+        
+        <li class="ratingFilter" id="rating4"> Rating: 4.0+</li>
+        <li id="pureveg"> Pure Veg</li>
+        <li id="sortbydeliverytime"> Sort by Delivery </li>
+      </ul>  
+
+      <div class="added-filters">
+        <ul>
+          
+        </ul>
+      </div>
+     
+    </div>
+
+
+    <div class="dishes-div">
+     
+     <div class="first-icon">
+        <div class="image-pic">
+            <img src="Biriyani.avif" alt="">
+        </div>
+        <span class="dishes">Biryani</span>
+     </div>  
+     
+     <div class="first-icon">
+        <div class="image-pic">
+            <img src="pizza.avif" alt="" class="pizza">
+        </div>
+        <span class="dishes">Pizza</span>
+     </div> 
+     
+     <div class="first-icon">
+        <div class="image-pic">
+            <img src="chicken.webp" alt="">
+        </div>
+        <span class="dishes">Chicken</span>
+     </div> 
+
+     <div class="first-icon">
+        <div class="image-pic">
+            <img src="Thali.avif" alt="" class="pizza">
+        </div>
+        <span class="dishes">Thali</span>
+     </div> 
+
+     <div class="first-icon">
+        <div class="image-pic">
+            <img src="Fried Rice.avif" alt="" class="pizza">
+        </div>
+        <span class="dishes">Fired Rice</span>
+     </div> 
+
+     <div class="first-icon">
+        <div class="image-pic">
+            <img src="Dosa.avif" alt="" class="pizza">
+        </div>
+        <span class="dishes">Dosa</span>
+     </div> 
+     <div class="first-icon">
+        <div class="image-pic">
+            <img src="Burger.avif" alt="">
+        </div>
+        <span class="dishes">Burger</span>
+     </div> 
+
+     <div class="first-icon">
+        <div class="image-pic">
+            <img src="North Indian.avif" alt="" class="pizza">
+        </div>
+        <span class="dishes">North Indian</span>
+     </div> 
+
+     <div class="first-icon">
+        <div class="image-pic">
+            <img src="Rolls.avif" alt="">
+        </div>
+        <span class="dishes">Rolls</span>
+     </div> 
+
+     <div class="first-icon">
+        <div class="image-pic">
+            <img src="sandwich.avif" alt="" class="pizza">
+        </div>
+        <span class="dishes">Sandwich</span>
+     </div> 
+    </div>
+
+
+   <div class="brands-div">
+    <h2>Top brands for you</h2>
+    <div class="brands-logo-section">
+        <div class="logos-div">
+            <div class="my-logo-div">
+            <img src="Logo1.avif" alt=""></div>
+            <span class="logoname" id="meghanafood">Meghana Foods</span>
+            <span class="time">22 min</span>
+
+        </div>
+
+        <div class="logos-div">
+            <div class="my-logo-div">
+            <img src="Dominos.avif" alt=""></div>
+            <span class="logoname" id="Dominos">Dominos Pizza</span>
+            <span class="time">20 min</span>
+
+        </div>
+
+        <div class="logos-div">
+            <div class="my-logo-div">
+            <img src="Truffles.avif" alt=""></div>
+            <span class="logoname" id="Truffles">Truffles</span>
+            <span class="time">22 min</span>
+
+        </div>
+
+        <div class="logos-div">
+            <div class="my-logo-div">
+            <img src="KFC.avif" alt=""></div>
+            <span class="logoname" id="KFC">KFC</span>
+            <span class="time">27 min</span>
+
+        </div>
+
+        <div class="logos-div">
+            <div class="my-logo-div">
+            <img src="Burger King.avif" alt=""></div>
+            <span class="logoname" id="Burgerking">Burger King</span>
+            <span class="time">23 min</span>
+
+        </div>
+
+        <div class="logos-div">
+            <div class="my-logo-div">
+            <img src="FreshMenu.avif" alt=""></div>
+            <span class="logoname" id="FreshMenu">Fresh Menu</span>
+            <span class="time">23 min</span>
+
+        </div>
+
+        <div class="logos-div">
+            <div class="my-logo-div">
+            <img src="Empire.avif" alt="" id="empire"></div>
+            <span class="logoname" id="Empire">Empire Restaurant</span>
+            <span class="time">25 min</span>
+
+        </div>
+
+
+    </div>
+   </div>
+
+   
+<div class="food-items-list-div-homepage">
+    <h2 class="Place Heading">Delivery Restaurant in Bengaluru</h2>
+
+    <div class="items-div-food">
+
+        
+
+
+
+        
+
+
+       
+    </div>
+</div>
+<div class="Filter-options-div" style="background-color: white; display: none;">
+    <div class="Filtername">
+        <span>Filters</span>   
+        <i class="bi bi-x-lg"></i>
+       </div>
+       <div class="section-div">
+           <div class="section1">
+               
+               <div class="frst-option">
+                   Sort by
+               </div>
+           </div>
+           <div class="section2">
+   
+               <div class="frst" id="lowestone">
+             <input type="checkbox" name="" id="lowest">
+             <label for="lowest">Rating : Low to High</label>  </div>
+   
+             <div class="frst" id="highestone">
+               <input type="checkbox" name="" id="highest"> 
+               <label for="highest">Rating : High to Low</label>  </div>
+   
+               <div class="frst" id="delivery">
+                <input type="checkbox" name="" id="deliverytime"> 
+                <label for="deliverytime">Delivery Time</label>  </div>
+   
+                   
+   
+                    
+                     <button class="apply">Apply</button>      
+   
+           </div>
+       </div>
+</div>
+
+
+
+
+</body>
+<script src="Data.js"></script>
+<script src="javascript.js"></script>
+<script src="Display.js"></script>
+<a href="logodisplay.html"></a>
+</html>
